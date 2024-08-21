@@ -1,0 +1,28 @@
+---
+import { onMount } from "solid-js";
+
+if (typeof window !== "undefined") {
+  onMount(async () => {
+    const { default: CMS } = await import("decap-cms-app");
+
+    // Initialisiere das CMS
+    CMS.init();
+
+    // Optional: Register Preview Template, falls benötigt
+    // CMS.registerPreviewTemplate("my-template", MyTemplate);
+  });
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <h1>Loading CMS...</h1>
+    <!-- Der Rest des CMS wird von der obigen Logik geladen -->
+  </body>
+</html>
