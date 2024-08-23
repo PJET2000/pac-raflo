@@ -1,6 +1,6 @@
 export default {
-    title: "Raflo",
-    titleSuffix: " on Tour",
+    title: "Raflo on Tour",
+    titleSuffix: "",
     description: "Reiseblog",
     defaultOgImage: "./defaultog.jpg",
     latestPosts: 3,
