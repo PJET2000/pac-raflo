@@ -2,19 +2,19 @@ export default {
     title: "Raflo on Tour",
     titleSuffix: "",
     description: "Reiseblog",
-    defaultOgImage: "./defaultog.jpg",
+    defaultOgImage: "./default.jpg",
     latestPosts: 3,
     postsPerPage: 3,
-    url: "https://pacamara-astro-6y7xr.kinsta.page",
+    url: "https://raflo.de",
     social: {
         'dribbble': false,
         'facebook': false,
-        'github': 'https://github.com/palmiak',
+        'github': false,
         'instagram': false,
         'mastodon': false,
         'pinterest': false,
         'skype': false,
-        'twitter': 'https://twitter.com/palmiak_fp'
+        'twitter': false,
 
     }
 }
