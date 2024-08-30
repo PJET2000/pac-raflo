@@ -3,16 +3,22 @@
 </button>
 
 <script>
-    const menuToggle = () => {
-        const button = document.querySelector("#menu_toggle");
-        const nav = document.querySelector("#navigation_wrapper");
-        button.addEventListener('click', function(){
+ const menuToggle = () => {
+    const button = document.querySelector("#menu_toggle");
+    const nav = document.querySelector("#navigation_wrapper");
+
+    if (button && nav) {  // Überprüfe, ob die Elemente vorhanden sind
+        button.addEventListener('click', function() {
             nav.classList.toggle('hidden');
             document.documentElement.classList.toggle('overflow-hidden');
         });
+    } else {
+        console.error('Menu toggle elements not found.');
     }
+}
 
-    menuToggle();
-    // Runs on view transitions navigation
-    document.addEventListener('astro:after-swap', menuToggle);
+menuToggle();
+// Runs on view transitions navigation
+document.addEventListener('astro:after-swap', menuToggle);
+
 </script>
